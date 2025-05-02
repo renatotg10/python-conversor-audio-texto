@@ -37,15 +37,28 @@ pip install openai-whisper tkinter
 
 ## ⚙️ Instalando o `ffmpeg`
 
-O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no seu sistema. Você já deve ter o arquivo `ffmpeg-7.1.1-essentials.zip` na raiz do projeto. Siga as instruções abaixo para configurar o `ffmpeg` no PATH do sistema.
+O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no seu sistema. Siga as instruções abaixo para configurar o `ffmpeg` no PATH do sistema.
+
+Para baixar o `ffmpeg` poderá fazer através dos links:
+
+**Disponível no meu GOOGLE DRIVE:**
+https://drive.google.com/file/d/1aCCuRwbb1JZylYkj_UfqXPRQegf7p1dN/view?usp=sharing
+
+**Link direto do Site CODEX FFMPEG:**
+https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+
+**Site CODEX FFMPEG:**
+https://www.gyan.dev/ffmpeg/builds/
 
 ### **Windows**
 
-1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials.zip`:
+1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials_build.zip`:
 
-   * Clique com o botão direito no arquivo `ffmpeg-7.1.1-essentials.zip` e escolha **Extrair Aqui** ou use um programa como [7-Zip](https://www.7-zip.org/) para extrair o conteúdo para a pasta `ffmpeg`.
+   * Clique com o botão direito no arquivo `ffmpeg-7.1.1-essentials_build.zip` e escolha **Extrair Aqui** ou use um programa como [Winrar](https://www.winrarbrasil.com.br/winrar/download.mv) ou [7-Zip](https://www.7-zip.org/) para extrair o conteúdo para a pasta `ffmpeg`.
 
-2. Adicione o `ffmpeg` ao PATH do sistema:
+2. Renomeie a pasta (diretório) `ffmpeg-7.1.1-essentials_build` para `ffmpeg`.
+
+3. Adicione o `ffmpeg` ao PATH do sistema:
 
    * Abra o **Prompt de Comando** como administrador.
    
@@ -57,7 +70,7 @@ O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no s
      setx PATH "%PATH%;C:\meus-projetos\converte-voz-texto\ffmpeg\bin"
      ```
 
-3. Verifique se o `ffmpeg` foi instalado corretamente:
+4. Verifique se o `ffmpeg` foi instalado corretamente:
 
    * Saia do **Prompt de Comando** e abra um novo **Prompt de Comando** (para garantir que as alterações no PATH foram aplicadas).
    * Digite:
@@ -71,16 +84,19 @@ O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no s
 
 ### **Linux (Ubuntu/Debian)**
 
-1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials.zip`:
+1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials_build.zip`:
 
-   * Navegue até a pasta onde o arquivo `ffmpeg-7.1.1-essentials.zip` está localizado.
+   * Navegue até a pasta onde o arquivo `ffmpeg-7.1.1-essentials_build.zip` está localizado.
+
    * Extraia o conteúdo:
 
      ```bash
-     unzip ffmpeg-7.1.1-essentials.zip
+     unzip ffmpeg-7.1.1-essentials_build.zip
      ```
 
-2. Adicione o `ffmpeg` ao PATH do sistema:
+2. Renomeie a pasta (diretório) `ffmpeg-7.1.1-essentials_build` para `ffmpeg`.
+
+3. Adicione o `ffmpeg` ao PATH do sistema:
 
    * Copie o caminho para a pasta `bin` dentro da pasta `ffmpeg`. Por exemplo, se a pasta `ffmpeg` estiver na raiz do seu projeto, o caminho será algo como:
      
@@ -105,13 +121,13 @@ O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no s
 
    * Salve e feche o arquivo (`Ctrl + X`, depois pressione `Y` para confirmar e `Enter`).
 
-3. Atualize o PATH:
+4. Atualize o PATH:
 
    ```bash
    source ~/.bashrc
    ```
 
-4. Verifique se o `ffmpeg` foi instalado corretamente:
+5. Verifique se o `ffmpeg` foi instalado corretamente:
 
    * Digite no terminal:
 
@@ -124,13 +140,19 @@ O Whisper requer que o `ffmpeg` esteja instalado e configurado corretamente no s
 
 ## 🚀 Como usar
 
-1. Execute o script:
+1. Navegue até a pasta do projeto:
+
+```bash
+cd /meus-projetos/converte-voz-texto/ffmpeg/bin
+```
+
+2. Execute o script:
 
    ```bash
-   python transcritor_gui.py
+   python converter-audio-texto.py
    ```
 
-2. Na interface:
+3. Na interface:
 
    * Clique em **Selecionar Arquivo** e escolha um arquivo de áudio suportado.
    * Escolha um modelo Whisper (quanto maior o modelo, melhor a qualidade, mas mais lento).

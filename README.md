@@ -73,6 +73,7 @@ https://www.gyan.dev/ffmpeg/builds/
 4. Verifique se o `ffmpeg` foi instalado corretamente:
 
    * Saia do **Prompt de Comando** e abra um novo **Prompt de Comando** (para garantir que as alterações no PATH foram aplicadas).
+
    * Digite:
 
      ```bash
@@ -84,57 +85,38 @@ https://www.gyan.dev/ffmpeg/builds/
 
 ### **Linux (Ubuntu/Debian)**
 
-1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials_build.zip`:
+1. Abra o Terminal do Linux e execute:
 
-   * Navegue até a pasta onde o arquivo `ffmpeg-7.1.1-essentials_build.zip` está localizado.
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
 
-   * Extraia o conteúdo:
+2. Verifique se o `ffmpeg` foi instalado corretamente, digite no ternimal:
 
-     ```bash
-     unzip ffmpeg-7.1.1-essentials_build.zip
-     ```
+```bash
+ffmpeg -version
+```
 
-2. Renomeie a pasta (diretório) `ffmpeg-7.1.1-essentials_build` para `ffmpeg`.
+Você deverá ver a versão do `ffmpeg` instalada.
 
-3. Adicione o `ffmpeg` ao PATH do sistema:
+---
 
-   * Copie o caminho para a pasta `bin` dentro da pasta `ffmpeg`. Por exemplo, se a pasta `ffmpeg` estiver na raiz do seu projeto, o caminho será algo como:
-     
-     Exemplo:
+### **macOS com Homebrew**
 
-     ```bash
-     /meus-projetos/converte-voz-texto/ffmpeg/bin
-     ```
+1. Se tiver o Homebrew instalado, execute o comando:
 
-   * Abra o terminal e edite o arquivo `.bashrc` (ou `.zshrc` para Zsh):
+```bash
+brew install ffmpeg
+```
 
-     ```bash
-     nano ~/.bashrc
-     ```
-   * Adicione a seguinte linha no final do arquivo:
+2. Verifique se o `ffmpeg` foi instalado corretamente, digite o comando:
 
-     Exemplo:
+```bash
+ffmpeg -version
+```
 
-     ```bash
-     export PATH=$PATH:/meus-projetos/converte-voz-texto/ffmpeg/bin
-     ```
-
-   * Salve e feche o arquivo (`Ctrl + X`, depois pressione `Y` para confirmar e `Enter`).
-
-4. Atualize o PATH:
-
-   ```bash
-   source ~/.bashrc
-   ```
-
-5. Verifique se o `ffmpeg` foi instalado corretamente:
-
-   * Digite no terminal:
-
-     ```bash
-     ffmpeg -version
-     ```
-   * Você deverá ver a versão do `ffmpeg` instalada.
+Você deverá ver a versão do `ffmpeg` instalada.
 
 ---
 

@@ -17,7 +17,7 @@ Este é um aplicativo simples com interface gráfica (GUI) feito em Python usand
 Antes de executar o aplicativo, certifique-se de ter:
 
 * Python 3.8 ou superior
-* O arquivo `ffmpeg-7.1.1-essentials.zip` extraído e configurado corretamente no PATH do sistema
+* O arquivo `ffmpeg-7.1.1-essentials_build.zip` extraído e configurado corretamente no PATH do sistema
 * Os seguintes pacotes Python:
 
 ```bash

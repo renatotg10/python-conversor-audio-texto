@@ -54,7 +54,7 @@ https://www.gyan.dev/ffmpeg/builds/
 
 1. Extraia o conteúdo do arquivo `ffmpeg-7.1.1-essentials_build.zip`:
 
-   * Clique com o botão direito no arquivo `ffmpeg-7.1.1-essentials_build.zip` e escolha **Extrair Aqui** ou use um programa como [Winrar](https://www.winrarbrasil.com.br/winrar/download.mv) ou [7-Zip](https://www.7-zip.org/) para extrair o conteúdo para a pasta `ffmpeg`.
+   * Clique com o botão direito no arquivo `ffmpeg-7.1.1-essentials_build.zip` e escolha **Extrair Aqui** ou use um programa como [WinRAR Brasil](https://www.winrarbrasil.com.br/winrar/download.mv) ou [7-Zip](https://www.7-zip.org/) para extrair o conteúdo para a pasta `ffmpeg`.
 
 2. Renomeie a pasta (diretório) `ffmpeg-7.1.1-essentials_build` para `ffmpeg`.
 
